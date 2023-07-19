@@ -9,7 +9,7 @@ export function transformViewport(viewport: Viewport) {
   const content = Array.from(new Map(Object.entries(viewport)))
     .map(([k, v]) => `${camelCase2KebabCase(k)}=${v}`)
     .join(',')
-  return transformStringContent('Content-Security-Policy', content)
+  return transformStringContent('viewport', content)
 }
 
 export function transformCSP(csp: CSP) {

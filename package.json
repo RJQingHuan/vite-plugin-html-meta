@@ -1,26 +1,32 @@
 {
   "name": "vite-plugin-html-meta",
-  "type": "module",
   "version": "1.0.0",
   "description": "Create meta tags and header configs from all sources in the final Vite html",
-  "author": {
-    "name": "QingHuan",
-    "email": "rjqinghuan@163.com"
-  },
+  "author": "QingHuan <rjqinghuan@163.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RJQingHuan/vite-plugin-html-meta"
+  },
+  "bugs": {
+    "url": "https://github.com/RJQingHuan/vite-plugin-html-meta/issues"
+  },
   "keywords": [
     "vite-plugin",
-    "header",
+    "head",
     "meta",
-    "generate"
+    "generate",
+    "csp"
   ],
   "exports": {
-    "require": "./dist/index.cjs",
-    "import": "./dist/index.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
   },
-  "main": "index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "README.md"
@@ -28,8 +34,6 @@
   "scripts": {
     "build": "tsup src/index.ts --sourcemap --dts --minify --format cjs,esm"
   },
-  "man": "dist/index.cjs",
-  "typings": "dist/index.d.ts",
   "peerDependencies": {
     "vite": ">=2.6.5"
   },

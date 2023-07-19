@@ -15,8 +15,7 @@ export function htmlMetaPlugin(opt: htmlMetaOptions): Plugin {
       const author = opt.author ? transformStringContent('author', opt.author) : ''
 
       const headIndex = html.indexOf('<head>') + 6
-      html = insertStr(html, headIndex, viewport + csp + referrer + description + keywords + author)
-      return html
+      return insertStr(html, headIndex, viewport + csp + referrer + description + keywords + author)
     },
   }
 }
