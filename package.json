@@ -1,0 +1,46 @@
+{
+  "name": "vite-plugin-html-meta",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Create meta tags and header configs from all sources in the final Vite html",
+  "author": {
+    "name": "QingHuan",
+    "email": "rjqinghuan@163.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vite-plugin",
+    "header",
+    "meta",
+    "generate"
+  ],
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.js"
+  },
+  "main": "index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --sourcemap --dts --minify --format cjs,esm"
+  },
+  "man": "dist/index.cjs",
+  "typings": "dist/index.d.ts",
+  "peerDependencies": {
+    "vite": ">=2.6.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.8",
+    "@types/node": "^20.4.2",
+    "eslint": "^8.45.0",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.4"
+  }
+}
