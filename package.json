@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-html-meta",
   "version": "1.0.0",
-  "description": "Create meta tags and header configs from all sources in the final Vite html",
+  "description": "Generate meta tags to html files according to configuration",
   "author": "QingHuan <rjqinghuan@163.com>",
   "license": "MIT",
   "repository": {
@@ -32,7 +32,10 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --sourcemap --dts --minify --format cjs,esm"
+    "watch": "npm run build -- --watch src",
+    "build": "tsup src/index.ts --sourcemap --dts --minify --format cjs,esm",
+    "bumpp": "bumpp",
+    "release": "npm run bumpp && npm publish"
   },
   "peerDependencies": {
     "vite": ">=2.6.5"
@@ -40,6 +43,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.8",
     "@types/node": "^20.4.2",
+    "bumpp": "^9.1.1",
     "eslint": "^8.45.0",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6",

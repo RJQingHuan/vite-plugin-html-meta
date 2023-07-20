@@ -19,9 +19,9 @@ export default defineConfig({
         reportUri: 'https://www.baidu.com',
       },
       referrer: 'origin',
-      description: '不包含内容，属性定义了与文档相关的键值对，不会显示在页面上，但对于机器是可读的。通常情况下，meta 元素被用于规定页面的描述、关键字',
-      keywords: ['HTML', 'web 标准', '开发文档'],
-      author: '张三',
+      description: 'description',
+      keywords: ['HTML', 'vite', 'vite-plugin-html-meta'],
+      author: 'QingHuan',
     }),
   ],
 })
