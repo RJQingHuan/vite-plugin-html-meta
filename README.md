@@ -7,7 +7,7 @@ Generate meta tags to html files according to configuration
 ```typescript
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { htmlMetaPlugin } from '../dist/index'
+import { htmlMetaPlugin } from 'vite-plugin-html-meta'
 
 export default defineConfig({
   plugins: [
