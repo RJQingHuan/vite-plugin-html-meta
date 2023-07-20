@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { htmlMetaPlugin } from '../dist/index'
+import { htmlMetaPlugin } from '../dist/index.mjs'
 
 export default defineConfig({
   plugins: [

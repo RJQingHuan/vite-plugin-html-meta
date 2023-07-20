@@ -1,8 +1,9 @@
+import { EOL } from 'node:os'
 import type { CSP, Viewport } from './type'
 import { camelCase2KebabCase } from './util'
 
 export function transformStringContent(name: string, content: string) {
-  return `\n\t\t<meta name="${name}" content="${content}" />`
+  return `${EOL}<meta name="${name}" content="${content}" />`
 }
 
 export function transformViewport(viewport: Viewport) {

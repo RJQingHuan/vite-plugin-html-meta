@@ -38,29 +38,13 @@ export default defineConfig({
 ## output
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=0.4" />
-		<meta name="Content-Security-Policy" content="default-src 'self';connect-src http://127.0.0.1:9003 ws://localhost:5173 http://47.116.130.135;script-src 'self' 'unsafe-inline';img-src data: https://* blob:;worker-src 'none';report-uri https://www.baidu.com;" />
-		<meta name="referrer" content="origin" />
-		<meta name="description" content="description" />
-		<meta name="keywords" content="HTML,vite,vite-plugin-html-meta" />
-		<meta name="author" content="QingHuan" />
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <title>Vite + Vue + TS</title>
-    <script type="module" crossorigin src="/assets/index-127f2da4.js"></script>
-    <link rel="stylesheet" href="/assets/index-c322ae43.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
-</html>
-
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=0.4" />
+<meta name="Content-Security-Policy" content="default-src 'self';connect-src http://127.0.0.1:9003 ws://localhost:5173 http://47.116.130.135;script-src 'self' 'unsafe-inline';img-src data: https://* blob:;worker-src 'none';report-uri https://www.baidu.com;" />
+<meta name="referrer" content="origin" />
+<meta name="description" content="description" />
+<meta name="keywords" content="HTML,vite,vite-plugin-html-meta" />
+<meta name="author" content="QingHuan" />
 ```
-
-
 
 # Type Declarations
 ```typescript
