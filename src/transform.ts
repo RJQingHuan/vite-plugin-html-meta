@@ -20,7 +20,7 @@ export function transformCSP(csp: CSP) {
       return `${camelCase2KebabCase(k)} ${v};`
     })
     .join('')
-  const formatterReg = /(self|unsafe-inline|unsafe-eval)/ig
+  const formatterReg = /(self|unsafe-inline|unsafe-eval|none)/ig
   return transformStringContent('Content-Security-Policy', content.replaceAll(formatterReg, '\'$1\''))
 }
 

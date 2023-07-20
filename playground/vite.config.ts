@@ -16,6 +16,7 @@ export default defineConfig({
         connectSrc: ['http://127.0.0.1:9003', 'ws://localhost:5173', 'http://47.116.130.135'],
         scriptSrc: ['self', 'unsafe-inline'],
         imgSrc: ['data:', 'https://*', 'blob:'],
+        workerSrc: ['none'],
         reportUri: 'https://www.baidu.com',
       },
       referrer: 'origin',
