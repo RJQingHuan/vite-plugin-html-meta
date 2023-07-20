@@ -22,7 +22,7 @@ export function transformCSP(csp: CSP) {
     })
     .join('')
   const formatterReg = /(self|unsafe-inline|unsafe-eval|none)/ig
-  return transformStringContent('Content-Security-Policy', content.replaceAll(formatterReg, '\'$1\''))
+  return `${EOL}<meta http-equiv="Content-Security-Policy" content="${content.replaceAll(formatterReg, '\'$1\'')}" />`
 }
 
 export function transformKeywords(keywords: Array<string>) {

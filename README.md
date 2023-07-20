@@ -39,7 +39,7 @@ export default defineConfig({
 
 ```html
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=0.4" />
-<meta name="Content-Security-Policy" content="default-src 'self';connect-src http://127.0.0.1:9003 ws://localhost:5173 http://47.116.130.135;script-src 'self' 'unsafe-inline';img-src data: https://* blob:;worker-src 'none';report-uri https://www.baidu.com;" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self';connect-src http://127.0.0.1:9003 ws://localhost:5173 http://47.116.130.135;script-src 'self' 'unsafe-inline';img-src data: https://* blob:;worker-src 'none';report-uri https://www.baidu.com;" />
 <meta name="referrer" content="origin" />
 <meta name="description" content="description" />
 <meta name="keywords" content="HTML,vite,vite-plugin-html-meta" />
