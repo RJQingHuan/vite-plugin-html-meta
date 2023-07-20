@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-html-meta",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate meta tags to html files according to configuration",
   "author": "QingHuan <rjqinghuan@163.com>",
   "license": "MIT",
