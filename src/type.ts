@@ -24,6 +24,7 @@ export interface CSP {
   connectSrc?: Array<string>
   workerSrc?: Array<string>
   manifestSrc?: Array<string>
+  frameSrc?: Array<string>
   baseUri?: Array<string>
   frameAncestors?: Array<string>
   formAction?: Array<string>
